@@ -23,6 +23,7 @@ if (isset($_POST["height"]) && isset($_POST['weight'])) {
     } else {
         echo "Fat";
     };
+    echo $BMI;
 };
 ?>
 <h1>Tính chỉ số BMI</h1>
