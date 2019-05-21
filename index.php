@@ -11,10 +11,18 @@
 </head>
 <body>
 <?php
+$weight = $height = '';
 if (isset($_POST["height"]) && isset($_POST['weight'])) {
     $height = (int)$_POST["height"];
     $weight = (int)$_POST["weight"];
     $BMI = $weight / ($height * $weight);
+    if ($BMI <= 18) {
+        echo 'thin';
+    } elseif ($BMI > 18 && $BMI <= 25) {
+        echo 'normall';
+    } else {
+        echo "Fat";
+    };
     echo $BMI;
 };
 ?>
