@@ -13,8 +13,8 @@
 <?php
 $weight = $height = '';
 if (isset($_POST["height"]) && isset($_POST['weight'])) {
-    $height = (int)$_POST["height"];
-    $weight = (int)$_POST["weight"];
+    $height = (float)$_POST["height"];
+    $weight = (float)$_POST["weight"];
     $BMI = $weight / ($height * $weight);
     if ($BMI <= 18) {
         echo 'thin';
@@ -23,7 +23,6 @@ if (isset($_POST["height"]) && isset($_POST['weight'])) {
     } else {
         echo "Fat";
     };
-    echo $BMI;
 };
 ?>
 <h1>Tính chỉ số BMI</h1>
