@@ -13,8 +13,8 @@
 <?php
 $weight = $height = '';
 if (isset($_POST["height"]) && isset($_POST['weight'])) {
-    $height = (float)$_POST["height"];
-    $weight = (float)$_POST["weight"];
+    $height = $_POST["height"];
+    $weight = $_POST["weight"];
     $BMI = $weight / ($height * $weight);
     if ($BMI <= 18) {
         echo 'thin';
