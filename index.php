@@ -14,11 +14,11 @@
 <form name="bmi" action="" method="post" >
     <div class="form-group">
         <label >Chiều cao</label>
-        <input type="number" placeholder="heght">
+        <input type="text" placeholder="heght">
     </div>
     <div class="form-group">
         <label >Cân nặng</label>
-        <input type="number" placeholder="Cân nặng">
+        <input type="text" placeholder="Cân nặng">
     </div>
 
     <button type="submit" class="btn btn-primary">BMI</button>
